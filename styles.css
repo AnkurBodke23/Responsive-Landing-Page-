@@ -1,0 +1,85 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaeaea;
+}
+
+/* Navbar styles */
+#main-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Dark background with transparency */
+    background-color: rgba(33, 33, 33, 0.8); 
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 25px;
+    display: block;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-item a:hover {
+    background-color: #f39c12; /* Change background to golden yellow */
+    color: #fff; /* Ensure text stays white on hover */
+}
+
+/* Style when the navbar is scrolled */
+#main-navbar.scrolled {
+    background-color: rgba(33, 33, 33, 1); /* Solid dark background */
+}
+
+#main-navbar.scrolled .nav-item a {
+    color: #f39c12; /* Change text color to yellow when scrolled */
+}
+
+/* Section styles */
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    padding: 0 20px;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about, #services, #contact {
+    background-color: #ffffff;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
